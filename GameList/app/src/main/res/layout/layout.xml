@@ -9,5 +9,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColorHighlight ="#ffffff "
         />
 </LinearLayout>

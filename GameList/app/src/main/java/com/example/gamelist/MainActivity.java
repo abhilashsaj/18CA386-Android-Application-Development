@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
     ListView simpleList;
-    String countryList[] = {"India", "China", "australia", "Portugle", "America", "NewZealand"};
+    String countryList[] = {"Call of Duty", "GTA 4", "Sims 3", "PUBG", "Battle Field 3", "Assassin's Creed"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
