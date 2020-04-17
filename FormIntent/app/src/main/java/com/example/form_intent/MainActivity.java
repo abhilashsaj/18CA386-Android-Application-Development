@@ -1,24 +1,34 @@
 package com.example.form_intent;
-import android.content.Intent;
 import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends Activity {
+    // Defining the object for button
+    Button button1;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-    public void callSecondActivity(View view){
-        Intent i = new Intent(getApplicationContext(), MainActivityTwo.class);
-        i.putExtra("Value1", "Android ");
-        i.putExtra("Value2", "Simple");
-        // Set the request code to any code you like, you can identify the
-        // callback via this code
-        startActivity(i);
-    }
 
+        // Bind the components to their respective objects
+        // by assigning their IDs
+        // with the help of findViewById() method
+        button1 = (Button)findViewById(R.id.Button01);
+
+        button1.setOnClickListener(new OnClickListener() {
+            public void onClick(View view)
+            {
+
+                // Creating explicit intent
+                Intent i = new Intent(getApplicationContext(),
+                        ActivityTwo.class);
+                startActivity(i);
+            }
+        });
+    }
 }
