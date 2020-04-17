@@ -12,7 +12,7 @@ public class NextActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.next_activity);
-        txtName = (TextView) findViewById(R.id.text2);
+        txtName = (TextView) findViewById(R.id.textView2);
         Intent intename = getIntent();
 //Get the USERNAME passed from IntentExampleActivity
         String uname = (String) intename.getSerializableExtra("USERNAME");
