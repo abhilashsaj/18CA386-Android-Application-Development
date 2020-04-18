@@ -14,13 +14,18 @@ import java.util.zip.Inflater;
 public class CustomAdapter extends BaseAdapter {
     Context context;
     String countryList[];
+    String emailList[];
+    String phoneList[];
     int flags[];
     LayoutInflater inflter;
 
-    public CustomAdapter(Context applicationContext, String[] countryList, int[] flags) {
+    public CustomAdapter(Context applicationContext, String[] countryList, String emailList[],String phoneList[], int[] flags) {
         this.context = context;
         this.countryList = countryList;
         this.flags = flags;
+        this.emailList = emailList;
+        this.phoneList = phoneList;
+
         inflter = (LayoutInflater.from(applicationContext));
     }
 
@@ -43,8 +48,12 @@ public class CustomAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         view = inflter.inflate(R.layout.activity_listview, null);
         TextView country = (TextView) view.findViewById(R.id.textView);
+        TextView email = (TextView) view.findViewById(R.id.textView2);
+        TextView number = (TextView) view.findViewById(R.id.textView3);
         ImageView icon = (ImageView) view.findViewById(R.id.icon);
         country.setText(countryList[i]);
+        email.setText(emailList[i]);
+        number.setText(phoneList[i]);
         icon.setImageResource(flags[i]);
         return view;
     }
