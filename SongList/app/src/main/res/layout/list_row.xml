@@ -54,12 +54,12 @@
     <TextView
         android:id="@+id/duration"
         android:layout_width="37dp"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_alignTop="@id/title"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="355dp"
+        android:layout_marginStart="360dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="14dp"
         android:layout_marginRight="9dp"
@@ -70,8 +70,9 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:layout_width="31dp"
-        android:layout_height="0dp"
+        android:id="@+id/arrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"

@@ -22,14 +22,6 @@ public class MainActivity extends AppCompatActivity {
         gv = (ListView) findViewById(R.id.list);
         CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), imageList, titleList ,artistList);
         gv.setAdapter(customAdapter);
-        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                // Sending image id to FullScreenActivity
-                Intent i = new Intent(getApplicationContext(), SongDetails.class);
-                // passing array index
-                i.putExtra("id", position);
-                startActivity(i);
-            }
-        });
+
     }
 }
