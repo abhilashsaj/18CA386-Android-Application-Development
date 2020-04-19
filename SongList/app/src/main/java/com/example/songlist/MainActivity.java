@@ -10,16 +10,18 @@ import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    @Override
+
     int imageList[] = {R.drawable.katyperry};
+    ListView gv;
     String titleList[] = {"Roar"};
     String artistList[] = {"Katy Perry"};
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ListView gv = (ListView) findViewById(R.id.list);
-        gv.setAdapter(new CustomAdapter(getApplicationContext(),imageList, titleList,artistList));
+        gv = (ListView) findViewById(R.id.list);
+        CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), imageList, titleList ,artistList);
+        gv.setAdapter(customAdapter);
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
                 // Sending image id to FullScreenActivity
