@@ -1,4 +1,4 @@
 package com.example.songlist;
 
-public class XMLParser {
+public class MainActivity {
 }
