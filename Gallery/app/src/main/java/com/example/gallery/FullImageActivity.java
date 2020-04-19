@@ -6,9 +6,6 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 
-/**
- * Created by tutlane on 24-08-2017.
- */
 public class FullImageActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {

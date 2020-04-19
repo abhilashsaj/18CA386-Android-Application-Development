@@ -6,9 +6,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
-/**
- * Created by tutlane on 24-08-2017.
- */
+
 public class ImageAdapter extends BaseAdapter {
     private Context mContext;
     public ImageAdapter(Context c) {
@@ -34,16 +32,16 @@ public class ImageAdapter extends BaseAdapter {
     }
     // Add all our images to arraylist
     public Integer[] thumbImages = {
-            R.drawable.img1, R.drawable.img2,
-            R.drawable.img3, R.drawable.img4,
-            R.drawable.img5, R.drawable.img6,
-            R.drawable.img7, R.drawable.img8,
-            R.drawable.img1, R.drawable.img2,
-            R.drawable.img3, R.drawable.img4,
-            R.drawable.img5, R.drawable.img6,
-            R.drawable.img7, R.drawable.img8,
-            R.drawable.img1, R.drawable.img2,
-            R.drawable.img3, R.drawable.img4,
-            R.drawable.img5
+            R.drawable.me, R.drawable.person2,
+            R.drawable.person3, R.drawable.person4,
+            R.drawable.me, R.drawable.person2,
+            R.drawable.person3, R.drawable.person4,
+            R.drawable.me, R.drawable.person2,
+            R.drawable.me, R.drawable.person2,
+            R.drawable.person3, R.drawable.person4,
+            R.drawable.me, R.drawable.person2,
+            R.drawable.person3, R.drawable.person4,
+            R.drawable.me, R.drawable.person2,
+            R.drawable.me
     };
 }
