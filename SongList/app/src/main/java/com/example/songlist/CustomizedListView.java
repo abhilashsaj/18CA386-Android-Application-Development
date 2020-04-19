@@ -1,9 +1,5 @@
 package com.example.songlist;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
 package com.example.androidhive;
 
 import java.util.ArrayList;
@@ -39,19 +35,19 @@ public class CustomizedListView extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        ArrayList&lt;HashMap&lt;String, String&gt;&gt; songsList = new ArrayList&lt;HashMap&lt;String, String&gt;&gt;();
+        ArrayList<HashMap<String, String>> songsList = new ArrayList<HashMap<String, String>>();
 
         XMLParser parser = new XMLParser();
         String xml = parser.getXmlFromUrl(URL); // getting XML from URL
         Document doc = parser.getDomElement(xml); // getting DOM element
 
         NodeList nl = doc.getElementsByTagName(KEY_SONG);
-        // looping through all song nodes &lt;song&gt;
-        for (int I = 0; I &lt; nl.getLength(); i++) {
+        // looping through all song nodes <song>
+        for (int I = 0; I < nl.getLength(); i++) {
             // creating new HashMap
-            HashMap&lt;String, String&gt; map = new HashMap&lt;String, String&gt;();
+            HashMap<String, String> map = new HashMap<String, String>();
             Element e = (Element) nl.item(i);
-            // adding each child node to HashMap key =&gt; value
+            // adding each child node to HashMap key => value
             map.put(KEY_ID, parser.getValue(e, KEY_ID));
             map.put(KEY_TITLE, parser.getValue(e, KEY_TITLE));
             map.put(KEY_ARTIST, parser.getValue(e, KEY_ARTIST));
@@ -72,7 +68,7 @@ public class CustomizedListView extends Activity {
         list.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
-            public void onItemClick(AdapterView&lt;?&gt; parent, View view,
+            public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
 
             }
