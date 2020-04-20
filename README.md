@@ -1,4 +1,3 @@
-```
 # 18CA386-Android Application Development 
 ## Assignment 3
 ## S4MCA
@@ -16,7 +15,3 @@ a.	Each list must have an arrow icon on the right end
 b.	On clicking the each list, a new page should display the description about the movie and an image related to that.
 
 ###### 5.	Use Grid View and create a gallery to display images. On clicking an image in the grid view, that image should be displayed in full size.
-
-
-
-```
