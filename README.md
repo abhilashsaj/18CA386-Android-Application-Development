@@ -3,7 +3,7 @@
 ## S4MCA
 
 
-#### 1.	Use a list view to display list of games and display the selected one. (Use Array Adapter). On selecting a particular list item, the background color of the selected list item must be highlighted to blue.
+###### 1.	Use a list view to display list of games and display the selected one. (Use Array Adapter). On selecting a particular list item, the background color of the selected list item must be highlighted to blue.
 
 ###### 2.	Create a ‘Form ‘using all the basic views (can use any layout). On Submitting the form, the details should be displayed in the next activity. [ use Intent]
 [Try passing data as individual key-value pair and using Bundle]
