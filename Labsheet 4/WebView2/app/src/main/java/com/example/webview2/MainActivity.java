@@ -12,6 +12,7 @@ class MyWebViewClient extends WebViewClient {
         view.loadUrl(url); // load the url
         return true;
     }
+
 }
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         simpleWebView.setWebViewClient(new MyWebViewClient());
 
 // string url which you have to load into a web view
-        String url = "https://google.com/";
+        String url = "https://google.com";
         simpleWebView.getSettings().setJavaScriptEnabled(true);
         simpleWebView.loadUrl(url);
     }
