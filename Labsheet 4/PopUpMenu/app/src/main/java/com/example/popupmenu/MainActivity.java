@@ -44,9 +44,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
             case R.id.share_item:
                 // do your code
                 return true;
-            case R.id.bookmark_item:
-                // do your code
-                return true;
+
             default:
                 return false;
         }
