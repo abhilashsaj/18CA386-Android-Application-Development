@@ -12,3 +12,16 @@
     *	On clicking the each list, a new page should display the description about the movie and an image related to that.
 
 5.	Use Grid View and create a gallery to display images. On clicking an image in the grid view, that image should be displayed in full size.
+
+## Assignment 4
+
+1.	Create a small app with multiple fragments in same activity. On clicking an item in fragment 1, some item description should be displayed in fragment 2.
+
+2.	Create a web view to display some static html content and also load a web URL.
+
+3.	Use WebViewClient in web view and load content.
+
+4.	Try out Options Menu, Context Menu and Popup Menu.
+   •	Implement intent in an option menu item click.
+   •	Implement any action in the context menu item click.
+
