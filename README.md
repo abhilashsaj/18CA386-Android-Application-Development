@@ -24,18 +24,23 @@
 
 
 1.	Create a simple order billing app as the blue print given below.
-      •	Any layout can be used. Set a background image for the layout. 
-      •	Depending on the length, toppings and drink chosen for the sandwich, the total amount has to calculated and displayed. 
-      •	Rate for 15cm is 100rs and 30cm is 200rs. For Toppings paneer and mushroom extra 50rs each and for other toppings extra 30 each has to be paid. 
-      •	Drink: Three different drinks are available (Coke, Pepsi, Fanta).The text field has to be auto completed. Each drink has a rate of 40rs. 
-      •	Finally on clicking order button, the ordered item along with total rate has to be displayed using a message box/alert box.
+            •	Any layout can be used. Set a background image for the layout. 
+
+            •	Depending on the length, toppings and drink chosen for the sandwich, the total amount has to calculated and displayed.
+
+            •	Rate for 15cm is 100rs and 30cm is 200rs. For Toppings paneer and mushroom extra 50rs each and for other toppings extra 30 each has to be paid.
+
+            •	Drink: Three different drinks are available (Coke, Pepsi, Fanta).The text field has to be auto completed. Each drink has a rate of 40rs. 
+
+            •	Finally on clicking order button, the ordered item along with total rate has to be displayed using a message box/alert box.
 
 2.	Implement a movie rating app. Blue print is given below.
 
-      •	Set the default ratings for each rating bar to 3.
-      •	Once the rating is given, enter the user mail id, choose a date and submit ratings.
-      •	On submitting, display the average rating and best rated movie in a message box/alert box.
+            •	Set the default ratings for each rating bar to 3.
 
+            •	Once the rating is given, enter the user mail id, choose a date and submit ratings.
+
+            •	On submitting, display the average rating and best rated movie in a message box/alert box.
 
 
 ## Assignment 3
@@ -61,6 +66,8 @@
 3.	Use WebViewClient in web view and load content.
 
 4.	Try out Options Menu, Context Menu and Popup Menu.
-   •	Implement intent in an option menu item click.
-   •	Implement any action in the context menu item click.
+
+         •	Implement intent in an option menu item click.
+
+         •	Implement any action in the context menu item click.
 
