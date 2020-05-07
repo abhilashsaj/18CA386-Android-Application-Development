@@ -1,7 +1,5 @@
-# 18CA386-Android Application Development 
+# 18CA386-Android Application Development - S4MCA
 ## Assignment 3
-## S4MCA
-
 
 1.	Use a list view to display list of games and display the selected one. (Use Array Adapter). On selecting a particular list item, the background color of the selected list item must be highlighted to blue.
 
