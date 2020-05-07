@@ -10,7 +10,7 @@
 
 4.	Try out Check box and Radio button and create a Quiz App with minimal Interface. 
 
-   Quiz app needs to have 3 questions and its different choices using check box for multiple answers and radio button for single answer. On submitting the answers, the app should display the total score. Also the user’s response needs to be validated and must display the correct answers using a Green tick mark.
+      Quiz app needs to have 3 questions and its different choices using check box for multiple answers and radio button for single answer. On submitting the answers, the app should display the total score. Also the user’s response needs to be validated and must display the correct answers using a Green tick mark.
 
 5.	Use date picker, time picker and calendar view. Display the output in the same activity
 
