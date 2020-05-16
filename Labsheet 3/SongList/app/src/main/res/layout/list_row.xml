@@ -19,7 +19,7 @@
             android:id="@+id/list_image"
             android:layout_width="50dip"
             android:layout_height="50dip"
-            android:src="@drawable/katyperry"/>
+            android:src="@drawable/user"/>
 
     </LinearLayout>
 
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/thumbnail"
         android:layout_toRightOf="@+id/thumbnail"
-        android:text="Katy Perry - Roar"
+        android:text="Abhilash"
         android:textColor="#040404"
         android:typeface="sans"
         android:textSize="15dip"
@@ -43,31 +43,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
         android:textColor="#343434"
-        android:textSize="10dip"
+        android:textSize="15dip"
         android:layout_marginTop="1dip"
         android:layout_toRightOf="@+id/thumbnail"
-        android:text="Just gona stand there and ..." />
+        android:text="9567347371" />
 
     <!-- Rightend Duration -->
 
     <!-- Rightend Arrow -->
-    <TextView
-        android:id="@+id/duration"
-        android:layout_width="37dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/title"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="360dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="9dp"
-        android:gravity="right"
-        android:text="5:45"
-        android:textColor="#10bcc9"
-        android:textSize="10dip"
-        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/arrow"
