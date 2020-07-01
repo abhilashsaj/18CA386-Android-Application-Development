@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         updateold= (EditText) findViewById(R.id.editText3);
         updatenew= (EditText) findViewById(R.id.editText5);
         delete = (EditText) findViewById(R.id.editText6);
+
+        helper = new myDbAdapter(this);
     }
     public void addUser(View view)
     {
