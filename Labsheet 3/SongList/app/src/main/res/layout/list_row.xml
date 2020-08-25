@@ -13,7 +13,7 @@
         android:padding="3dip"
         android:layout_alignParentLeft="true"
         android:background="@drawable/image_bg"
-        android:layout_marginRight="5dip">
+        andro   id:layout_marginRight="5dip">
 
         <ImageView
             android:id="@+id/list_image"
