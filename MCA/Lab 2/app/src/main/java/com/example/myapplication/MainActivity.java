@@ -10,19 +10,19 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     static final String STATE_USER = "Abhilash";
-    private String mUser;
+    private String mUser = "Abhilash";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.e("Main Activity","Created Main Activity");
         setContentView(R.layout.activity_main);
-
+        Toast.makeText(getApplicationContext(),"User info: "+ mUser, Toast.LENGTH_LONG).show();
         if (savedInstanceState != null) {
             mUser = savedInstanceState.getString(STATE_USER);
         } else {
             mUser = "user";
         }
-        Toast.makeText(getApplicationContext(),"User info: "+ mUser, Toast.LENGTH_LONG).show();
+
     }
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         // Always call the superclass so it can save the view hierarchy state
         super.onSaveInstanceState(savedInstanceState);
     }
+
     public void callSecondActivity(View view){
         Log.e("Calling Second Activity","Calling Activity two ");
         Intent i = new Intent(getApplicationContext(), MainActivityTwo.class);
