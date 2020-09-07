@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(), SecondActivity.class);
                 intent.putExtra("name", name.getText().toString());
-                intent.putExtra("password", password.getText().toString().isEmpty());
-                intent.putExtra("email", email.getText().toString().isEmpty());
+                intent.putExtra("password", password.getText().toString());
+                intent.putExtra("email", email.getText().toString());
                 intent.putExtra("date", date.getText().toString());
                 intent.putExtra("contact", contact.getText().toString());
                 startActivity(intent);

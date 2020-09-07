@@ -20,8 +20,12 @@ public class SecondActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         String name = extras.getString("name");
         String password = extras.getString("password");
+        String email = extras.getString("email");
+        String contact = extras.getString("contact");
+        String date = extras.getString("date");
         Toast.makeText(getApplicationContext(),"Values are:\n Name: "+name+
                 "\n Second Value: "+password, Toast.LENGTH_LONG).show();
+        t.setText(name+"\n"+password + "\n" +email + "\n"+ contact + "\n" + date);
     }
 
 
