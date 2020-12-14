@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent" android:layout_width="match_parent">
+    <item android:id="@+id/mov1"
+        android:title="Movie1" />
+    <item android:id="@+id/mov2"
+        android:title="Movie2" />
+    <item android:id="@+id/mov3"
+        android:title="Movie3" />
+</menu>

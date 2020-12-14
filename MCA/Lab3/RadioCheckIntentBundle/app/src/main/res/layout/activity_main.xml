@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course"
+        android:textStyle="bold"
+        android:layout_marginLeft="250dp"
+        android:textSize="20dp"
+        android:layout_marginStart="10dp" />
+
+    <RadioGroup
+        android:layout_marginTop="40dp"
+        android:id="@+id/rg2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb1"
+            android:text="MCA"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb2"
+            android:text="BCA"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb3"
+            android:text="M.Tech"
+            android:textSize="20dp"/>
+
+    </RadioGroup>
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:text="Hobbies"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listening Music"
+        android:layout_marginTop="180dp"
+        android:textSize="18sp"
+        android:onClick="selectItem"/>
+
+
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:text="Reading"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        tools:layout_editor_absoluteX="382dp"
+        android:onClick="selectItem"/>
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movies"
+        android:layout_marginTop="270dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/cb1"
+        tools:layout_editor_absoluteX="386dp"
+        android:onClick="selectItem"/>
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sports"
+        android:layout_marginTop="210dp"
+        android:textSize="18sp"
+        android:onClick="selectItem"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="131dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="310dp"
+        android:onClick="nextPage"
+        app:srcCompat="@drawable/user" />
+
+</RelativeLayout>
